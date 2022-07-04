@@ -10,7 +10,7 @@ import javax.persistence.GeneratedValue;
 @Controller
 public class HelloController {
 
-    @GetMapping("hello")
+    @GetMapping("/hello")
     public String hello(Model model) {
         model.addAttribute("data", "hello");
         return "hello";
