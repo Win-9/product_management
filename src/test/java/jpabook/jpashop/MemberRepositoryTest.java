@@ -17,7 +17,7 @@ public class MemberRepositoryTest {
     @Transactional
     public void testMember(){
         Member member = new Member();
-        member.setUsrname("memberA");
+        member.setName("memberA");
 
         Long savedId = memberRepository.save(member);
 
