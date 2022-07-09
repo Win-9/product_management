@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class BookForm {
 
-    private Long id;
+    private long id;
 
     private String name;
     private int price;
