@@ -8,3 +8,18 @@ body{
     background-color: #9740c9;
     border:none;
 }
+
+h1{
+    text-align: center;
+}
+
+.menu{
+    text-align: center;
+    padding: 5%;
+}
+.jumbotron .menu div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;
+    padding: 3%;
+}

@@ -9,21 +9,32 @@
     <div th:replace="fragments/bodyHeader :: bodyHeader" />
     <div class="jumbotron --blue">
         <h1>Item Management</h1>
-        <p class="lead">회원 기능</p>
-        <p>
-            <a class="btn btn-lg btn-secondary" href="/members/new">회원 가입</a>
-            <a class="btn btn-lg btn-secondary" href="/members">회원 목록</a>
-        </p>
-        <p class="lead">상품 기능</p>
-        <p>
-            <a class="btn btn-lg btn-dark" href="/items/new">상품 등록</a>
-            <a class="btn btn-lg btn-dark" href="/items">상품 목록</a>
-        </p>
-        <p class="lead">주문 기능</p>
-        <p>
-            <a class="btn btn-lg btn-info" href="/order">상품 주문</a>
-            <a class="btn btn-lg btn-info" href="/orders">주문 내역</a>
-        </p>
+
+        <div class="menu">
+            <div class = "page1">
+                <p class="lead">회원 기능</p>
+                <p>
+                    <a class="btn btn-lg btn-secondary" href="/members/new">회원 가입</a>
+                    <a class="btn btn-lg btn-secondary" href="/members">회원 목록</a>
+                </p>
+            </div>
+
+            <div class="page2">
+                <p class="lead">상품 기능</p>
+                <p>
+                    <a class="btn btn-lg btn-dark" href="/items/new">상품 등록</a>
+                    <a class="btn btn-lg btn-dark" href="/items">상품 목록</a>
+                </p>
+            </div>
+
+            <div class="page3">
+                <p class="lead">주문 기능</p>
+                <p>
+                    <a class="btn btn-lg btn-info" href="/order">상품 주문</a>
+                    <a class="btn btn-lg btn-info" href="/orders">주문 내역</a>
+                </p>
+            </div>
+        </div>
     </div>
     <div th:replace="fragments/footer :: footer" />
 </div> <!-- /container -->
