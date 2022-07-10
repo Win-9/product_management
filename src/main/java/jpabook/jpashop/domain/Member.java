@@ -1,6 +1,7 @@
 package jpabook.jpashop.domain;
 
 
+import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ public class Member {
     @Column(name = "MEMBER_ID")
     private Long id;
 
+    @NotNull
     private String name;
 
     @Embedded
