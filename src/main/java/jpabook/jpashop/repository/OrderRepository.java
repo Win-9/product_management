@@ -69,8 +69,8 @@ public class OrderRepository {
 
     public List<OrderSimpleQueryDto> findOrderDto() {
         return em.createQuery(
-                "select jpabook.jpashop.repository.order.query.OrderQueryDto(o.id, m.name, o.orderDate, o.status, d.address)" +
-                        "from Order o" +
+                "select jpabook.jpashop.repository.OrderSimpleQueryDto(o.id, m.name, o.orderDateTime, o.status, d.address)" +
+                        " from Order o" +
                         " join o.member m" +
                         " join o.delivery d", OrderSimpleQueryDto.class
         ).getResultList();
